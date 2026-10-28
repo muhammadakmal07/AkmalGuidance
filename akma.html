@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <title>Akmal Guidance • Mukammal Namaz Tarjuma, Duayein & Azkar</title>
+
+    <!-- Primary Meta Tags -->
+    <meta name="title" content="🕌 Akmal Guidance • Mukammal Namaz Tarjuma, Duayein & Azkar">
+    <meta name="description" content="Takbeer se Salaam tak Namaz ke har lafz ka asaan Hinglish aur Urdu tarjuma, Masnoon Duayein aur Daily Azkar. Padhein aur Sadaqah-e-Jariyah ki niyat se share karein.">
+    <meta name="theme-color" content="#063527">
+
+    <!-- Open Graph / WhatsApp / Facebook Preview Meta Tags -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://akmalguidance.netlify.app/">
+    <meta property="og:site_name" content="Akmal Guidance">
+    <meta property="og:title" content="🕌 Akmal Guidance • Mukammal Namaz Tarjuma & Masnoon Duayein">
+    <meta property="og:description" content="Namaz mein padhe jaane wale har Arabic lafz ka asaan Hinglish aur Urdu tarjuma, Jannat-Jahannum ki Masnoon Duayein aur Daily Azkar.">
+
+    <!-- Twitter / X Preview Meta Tags -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://akmalguidance.netlify.app/">
+    <meta property="twitter:title" content="🕌 Akmal Guidance • Mukammal Namaz Tarjuma & Masnoon Duayein">
+    <meta property="twitter:description" content="Takbeer se Salaam tak Namaz ke har lafz ka asaan Hinglish aur Urdu tarjuma, Masnoon Duayein aur Daily Azkar.">
+
+    <!-- Clean Mosque SVG Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23063527'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='central' text-anchor='middle' font-size='62'%3E🕌%3C/text%3E%3C/svg%3E">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cinzel:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                        arabic: ['Amiri', 'serif'],
+                        urdu: ['Noto Nastaliq Urdu', 'serif'],
+                        display: ['Cinzel', 'serif']
+                    },
+                    colors: {
+                        ivory: {
+                            50: '#FAF8F5',
+                            100: '#F3EFE6',
+                            200: '#E6DEC8'
+                        },
+                        emerald: {
+                            950: '#042219',
+                            900: '#063527',
+                            800: '#0A4D39',
+                            700: '#0F684D'
+                        },
+                        gold: {
+                            100: '#FDF8E7',
+                            500: '#C59B27',
+                            600: '#A67F16',
+                            700: '#7D5E0B'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #FAF8F5;
+            color: #0F2920;
+            background-image: 
+                radial-gradient(circle at 50% 0%, rgba(197, 155, 39, 0.10) 0%, transparent 55%),
+                url("data:image/svg+xml,%3Csvg width='52' height='52' viewBox='0 0 52 52' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M26 0l6.5 11L43 9l-2 10.5L52 26l-11 6.5L43 43l-10.5-2L26 52l-6.5-11L9 43l2-10.5L0 26l11-6.5L9 9l10.5 2z' fill='%23c59b27' fill-opacity='0.03' fill-rule='evenodd'/%3E%3C/svg%3E");
+            -webkit-tap-highlight-color: transparent;
+        }
+        .arabic-text {
+            font-family: 'Amiri', serif;
+            line-height: 2.35;
+            direction: rtl;
+        }
+        .urdu-text {
+            font-family: 'Noto Nastaliq Urdu', serif;
+            line-height: 2.45;
+            direction: rtl;
+        }
+        .pro-card {
+            background: #FFFFFF;
+            border: 1px solid rgba(197, 155, 39, 0.28);
+            box-shadow: 0 8px 24px -8px rgba(6, 53, 39, 0.07);
+        }
+        .mihrab-arabic-box {
+            background: linear-gradient(180deg, #FDFBF7 0%, #F5EFE2 100%);
+            border: 1.5px solid rgba(197, 155, 39, 0.40);
+            border-top-left-radius: 24px;
+            border-top-right-radius: 24px;
+            border-bottom-left-radius: 14px;
+            border-bottom-right-radius: 14px;
+        }
+        .tarjuma-highlight {
+            background: linear-gradient(135deg, #FDF8E7 0%, #FAF0D1 100%);
+            border-left: 4px solid #C59B27;
+        }
+        .talaffuz-highlight {
+            background: linear-gradient(135deg, #F0F9F5 0%, #E2F3EC 100%);
+            border-left: 4px solid #0A4D39;
+        }
+        .active-tab {
+            background: linear-gradient(135deg, #063527 0%, #0A4D39 100%);
+            color: #FFFFFF;
+            box-shadow: 0 4px 12px rgba(6, 53, 39, 0.25);
+        }
+        .section-pill {
+            background: #063527;
+            color: #F9E29C;
+            border: 1px solid #C59B27;
+        }
+        .wa-btn {
+            background-color: #ecfdf5;
+            color: #047857;
+            border: 1px solid rgba(16, 185, 129, 0.35);
+        }
+        .wa-btn:hover {
+            background-color: #d1fae5;
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+</head>
+<body class="min-h-screen antialiased pb-16">
+
+    <!-- Top Bismillah Bar -->
+    <div class="bg-emerald-950 text-ivory-100 py-2 px-3 text-center border-b border-gold-500/40">
+        <p class="arabic-text text-lg sm:text-xl text-amber-200 tracking-wide">بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ</p>
+        <p class="text-[11px] text-emerald-200/90 -mt-1">Namaz ke Alfaaz ko Samajh Kar Padhne ka Roohani Safar</p>
+    </div>
+
+    <!-- Sticky Header & Navigation -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-white/95 border-b border-gold-500/25 shadow-sm">
+        <div class="max-w-5xl mx-auto px-3 sm:px-5 py-3">
+            <div class="flex items-center justify-between gap-2">
+                <!-- Brand Identity -->
+                <div class="flex items-center gap-2.5 min-w-0">
+                    <div class="w-9 h-9 sm:w-11 sm:h-11 rounded-2xl bg-emerald-900 border border-gold-500 flex items-center justify-center text-amber-200 text-base sm:text-xl shadow-sm shrink-0">
+                        🕌
+                    </div>
+                    <div class="truncate">
+                        <h1 class="font-display text-base sm:text-xl font-bold text-emerald-950 tracking-wide leading-tight truncate">AKMAL GUIDANCE</h1>
+                        <p class="text-[10px] sm:text-xs text-gold-700 font-semibold truncate">Mukammal Namaz Tarjuma & Duayein</p>
+                    </div>
+                </div>
+
+                <!-- Right Action Buttons (Word-by-Word Toggle + Subtle WhatsApp Share) -->
+                <div class="flex items-center gap-1.5 shrink-0">
+                    <button onclick="toggleAllWordByWord()" id="wbw-toggle-btn" class="text-[11px] sm:text-xs font-bold px-2.5 sm:px-3 py-1.5 rounded-xl bg-ivory-100 hover:bg-ivory-200 text-emerald-900 border border-gold-500/40 transition">
+                        🔍 Lafzi Tarjuma
+                    </button>
+                    <button onclick="shareWebsite()" title="Share on WhatsApp" class="wa-btn px-2.5 sm:px-3 py-1.5 rounded-xl text-[11px] sm:text-xs font-bold flex items-center gap-1.5 transition shadow-sm">
+                        <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.124.556 4.119 1.528 5.847l-1.528 5.581 5.713-1.499c1.682.905 3.606 1.421 5.654 1.421 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+                        <span>Share</span>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Mobile-Friendly Scrollable Main Navigation -->
+            <nav class="flex items-center gap-1.5 overflow-x-auto no-scrollbar mt-3 pt-2 border-t border-ivory-200 text-xs sm:text-sm font-bold">
+                <button onclick="switchMainTab('namaz')" id="tab-namaz" class="active-tab px-3.5 py-2 rounded-xl whitespace-nowrap transition flex items-center gap-1.5">
+                    <span>📖</span> 1. Namaz Tarjuma
+                </button>
+                <button onclick="switchMainTab('duas')" id="tab-duas" class="px-3.5 py-2 rounded-xl text-emerald-950 bg-ivory-100 hover:bg-ivory-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <span>🤲</span> 2. Masnoon Duayein
+                </button>
+                <button onclick="switchMainTab('azkar')" id="tab-azkar" class="px-3.5 py-2 rounded-xl text-emerald-950 bg-ivory-100 hover:bg-ivory-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <span>✨</span> 3. Kalmay & Azkar
+                </button>
+                <button onclick="switchMainTab('faraiz')" id="tab-faraiz" class="px-3.5 py-2 rounded-xl text-emerald-950 bg-ivory-100 hover:bg-ivory-200 whitespace-nowrap transition flex items-center gap-1.5">
+                    <span>🕌</span> 4. Rakat & Faraiz
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content Container -->
+    <main class="max-w-5xl mx-auto px-3 sm:px-5 mt-5">
+
+        <!-- ========================================================= -->
+        <!-- TAB 1: FIRST PAGE - MUKAMMAL NAMAZ TARJUMA (ALL 15 STEPS) -->
+        <!-- ========================================================= -->
+        <section id="view-namaz" class="space-y-5">
+            
+            <!-- Top Intro & Section Filter Bar -->
+            <div class="pro-card rounded-2xl p-4 sm:p-5">
+                <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+                    <div>
+                        <span class="inline-block px-2.5 py-0.5 rounded-md bg-gold-100 border border-gold-500/40 text-gold-700 text-[11px] font-extrabold uppercase tracking-wider">Pehla Page • Direct Tarjuma Focus</span>
+                        <h2 class="text-xl sm:text-2xl font-extrabold text-emerald-950 mt-1">Namaz Mein Padhe Jaane Wale Har Lafz Ka Matlab</h2>
+                        <p class="text-xs sm:text-sm text-emerald-800 mt-0.5">Har card ke upar <strong class="text-emerald-950">Section Highlight</strong> aur kone mein chhota <strong class="text-emerald-800">WhatsApp icon</strong> hai jisse aap kisi bhi dua ko doston ke sath share kar sakte hain.</p>
+                    </div>
+                    <!-- Search Input -->
+                    <div class="w-full sm:w-64 shrink-0">
+                        <input type="text" id="searchInput" oninput="applyFilters()" placeholder="Search (Fatiha, Attahiyyat, Qunut...)" class="w-full bg-ivory-50 border border-gold-500/40 rounded-xl px-3.5 py-2.5 text-xs sm:text-sm text-emerald-950 placeholder-emerald-700/50 focus:outline-none focus:border-emerald-800">
+                    </div>
+                </div>
+
+                <!-- Section Highlight Quick Filters -->
+                <div class="mt-4 pt-3 border-t border-ivory-200 flex items-center gap-1.5 overflow-x-auto no-scrollbar text-xs font-bold">
+                    <span class="text-gold-700 mr-1 shrink-0">Section:</span>
+                    <button onclick="filterByStage('ALL')" id="stage-ALL" class="px-3 py-1.5 rounded-lg bg-emerald-900 text-amber-200 shrink-0 transition">Sabhi (1-15)</button>
+                    <button onclick="filterByStage('QIYAM')" id="stage-QIYAM" class="px-3 py-1.5 rounded-lg bg-ivory-100 text-emerald-900 hover:bg-ivory-200 shrink-0 transition">🧍 Qiyam (Khade Hokar)</button>
+                    <button onclick="filterByStage('RUKU_SAJDA')" id="stage-RUKU_SAJDA" class="px-3 py-1.5 rounded-lg bg-ivory-100 text-emerald-900 hover:bg-ivory-200 shrink-0 transition">🙇 Ruku & Sajda</button>
+                    <button onclick="filterByStage('QADAH')" id="stage-QADAH" class="px-3 py-1.5 rounded-lg bg-ivory-100 text-emerald-900 hover:bg-ivory-200 shrink-0 transition">🧎 Qa'dah (Baith Kar)</button>
+                    <button onclick="filterByStage('WITR')" id="stage-WITR" class="px-3 py-1.5 rounded-lg bg-ivory-100 text-emerald-900 hover:bg-ivory-200 shrink-0 transition">🌙 Witr (Dua-e-Qunut)</button>
+                </div>
+            </div>
+
+            <!-- Namaz Steps Container -->
+            <div id="namaz-steps-list" class="space-y-5"></div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- TAB 2: MASNOON DUAYEIN (JANNAT, JAHANNUM, BHALAI, SHIFA)  -->
+        <!-- ========================================================= -->
+        <section id="view-duas" class="hidden space-y-5">
+            <div class="pro-card rounded-2xl p-5 border-l-4 border-l-gold-500">
+                <span class="px-2.5 py-0.5 rounded-md bg-gold-100 text-gold-700 text-[11px] font-extrabold uppercase">Quran & Sunnah Ki Duayein</span>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-emerald-950 mt-1">🤲 Allah Se Mangne Wali Mashhoor Duayein</h2>
+                <p class="text-xs sm:text-sm text-emerald-800 mt-1">Namaz ke baad ya din mein kisi bhi waqt Allah se Jannat mangne, Jahannum se panah lene, maafi aur pareshani door karne ke liye yeh masnoon duayein zaroor padhein.</p>
+            </div>
+
+            <div id="duas-list" class="grid grid-cols-1 gap-5"></div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- TAB 3: KALMAY & DAILY AZKAR MEANINGS                      -->
+        <!-- ========================================================= -->
+        <section id="view-azkar" class="hidden space-y-5">
+            <div class="pro-card rounded-2xl p-5 border-l-4 border-l-emerald-800">
+                <span class="px-2.5 py-0.5 rounded-md bg-emerald-900 text-amber-200 text-[11px] font-bold uppercase">Roohani Alfaaz</span>
+                <h2 class="text-xl sm:text-2xl font-extrabold text-emerald-950 mt-1">✨ Daily Azkar, Kalmay Aur Unka Asal Tarjuma</h2>
+                <p class="text-xs sm:text-sm text-emerald-800 mt-1">Hum rozana jo tasbeehat aur kalmay padhte hain, unka sahi matlab aur fazilat yahan asaan bhasha mein samjhein.</p>
+            </div>
+
+            <div id="azkar-list" class="grid grid-cols-1 md:grid-cols-2 gap-4"></div>
+        </section>
+
+        <!-- ========================================================= -->
+        <!-- TAB 4: 5 WAQT RAKAT CHART & ZAROORI FARAIZ                -->
+        <!-- ========================================================= -->
+        <section id="view-faraiz" class="hidden space-y-6">
+            
+            <!-- 5 Waqt Rakat Chart -->
+            <div class="pro-card rounded-2xl p-5 overflow-x-auto">
+                <span class="px-2.5 py-0.5 rounded-md bg-gold-100 text-gold-700 text-[11px] font-extrabold uppercase">Mukammal Rakat Table</span>
+                <h2 class="text-xl font-extrabold text-emerald-950 mt-1 mb-3">🕰️ 5 Waqt Aur Jummah Ki Namaz Ka Rakat Chart</h2>
+                <table class="w-full text-left border-collapse text-xs sm:text-sm">
+                    <thead>
+                        <tr class="bg-emerald-900 text-amber-200 uppercase">
+                            <th class="py-3 px-3 rounded-tl-xl">Namaz</th>
+                            <th class="py-3 px-3">Pehle Sunnat</th>
+                            <th class="py-3 px-3 font-extrabold text-white">FARZ (Laazmi)</th>
+                            <th class="py-3 px-3">Baad Sunnat</th>
+                            <th class="py-3 px-3">Nafl</th>
+                            <th class="py-3 px-3">Witr Wajib</th>
+                            <th class="py-3 px-3 rounded-tr-xl font-extrabold text-amber-200">Total</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-ivory-200 font-medium text-emerald-950">
+                        <tr class="hover:bg-ivory-50">
+                            <td class="py-3 px-3 font-bold">1. Fajr</td>
+                            <td class="py-3 px-3">2 Sunnat (Mu'akkadah)</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-800">2 Farz</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 font-extrabold text-gold-700">4 Rakat</td>
+                        </tr>
+                        <tr class="hover:bg-ivory-50">
+                            <td class="py-3 px-3 font-bold">2. Zohar</td>
+                            <td class="py-3 px-3">4 Sunnat (Mu'akkadah)</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-800">4 Farz</td>
+                            <td class="py-3 px-3">2 Sunnat</td>
+                            <td class="py-3 px-3">2 Nafl</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 font-extrabold text-gold-700">12 Rakat</td>
+                        </tr>
+                        <tr class="hover:bg-ivory-50">
+                            <td class="py-3 px-3 font-bold">3. Asr</td>
+                            <td class="py-3 px-3">4 Sunnat (Ghair-Mu'akkadah)</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-800">4 Farz</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 font-extrabold text-gold-700">8 Rakat</td>
+                        </tr>
+                        <tr class="hover:bg-ivory-50">
+                            <td class="py-3 px-3 font-bold">4. Maghrib</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-800">3 Farz</td>
+                            <td class="py-3 px-3">2 Sunnat</td>
+                            <td class="py-3 px-3">2 Nafl</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 font-extrabold text-gold-700">7 Rakat</td>
+                        </tr>
+                        <tr class="hover:bg-ivory-50">
+                            <td class="py-3 px-3 font-bold">5. Isha</td>
+                            <td class="py-3 px-3">4 Sunnat (Ghair-Mu'akkadah)</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-800">4 Farz</td>
+                            <td class="py-3 px-3">2 Sunnat</td>
+                            <td class="py-3 px-3">2 + 2 Nafl</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-900">3 Witr Wajib</td>
+                            <td class="py-3 px-3 font-extrabold text-gold-700">17 Rakat</td>
+                        </tr>
+                        <tr class="hover:bg-ivory-50 bg-gold-100/40">
+                            <td class="py-3 px-3 font-bold">6. Jummah</td>
+                            <td class="py-3 px-3">4 Sunnat (Khutbah se pehle)</td>
+                            <td class="py-3 px-3 font-extrabold text-emerald-800">2 Farz (Jamaat)</td>
+                            <td class="py-3 px-3">4 + 2 Sunnat</td>
+                            <td class="py-3 px-3">2 Nafl</td>
+                            <td class="py-3 px-3 text-slate-400">—</td>
+                            <td class="py-3 px-3 font-extrabold text-gold-700">14 Rakat</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 3 Essential Pillars Cards: Wuzu, Sharaait, Arkaan -->
+            <div class="grid md:grid-cols-3 gap-5">
+                <div class="pro-card rounded-2xl p-5">
+                    <div class="text-xs font-extrabold text-gold-700 uppercase">Taharat (Paaki)</div>
+                    <h3 class="text-lg font-extrabold text-emerald-950 mt-0.5 mb-3">💧 Wuzu Ke 4 Farz</h3>
+                    <p class="text-xs text-emerald-800 mb-3">In 4 jagahon mein ek baal barabar hissa bhi sookha rahe toh Wuzu adhura rehta hai:</p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-emerald-950 font-medium">
+                        <li class="p-2.5 rounded-xl bg-ivory-50 border border-ivory-200"><strong>1. Pura Chehra Dhona:</strong> Peshani ke baalon se thodi ke niche tak, aur ek kaan ki lau se dusre kaan tak.</li>
+                        <li class="p-2.5 rounded-xl bg-ivory-50 border border-ivory-200"><strong>2. Dono Haath Kohniyon Samet:</strong> Ungliyon se lekar kohni (elbows) samet dhona.</li>
+                        <li class="p-2.5 rounded-xl bg-ivory-50 border border-ivory-200"><strong>3. Sar Ka Masah:</strong> Chauthai (1/4) sar par bheega haath pherna.</li>
+                        <li class="p-2.5 rounded-xl bg-ivory-50 border border-ivory-200"><strong>4. Dono Paon Takhno Samet:</strong> Ungliyon se lekar takhno (ankles) ke upar tak dhona.</li>
+                    </ul>
+                </div>
+
+                <div class="pro-card rounded-2xl p-5">
+                    <div class="text-xs font-extrabold text-gold-700 uppercase">Namaz Se Pehle</div>
+                    <h3 class="text-lg font-extrabold text-emerald-950 mt-0.5 mb-3">🕌 Namaz Ki 7 Shartein</h3>
+                    <p class="text-xs text-emerald-800 mb-3">Namaz shuru karne se pehle in 7 baton ka hona Farz hai:</p>
+                    <ul class="space-y-1.5 text-xs sm:text-sm text-emerald-950 font-medium">
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">1. Badan ka paak hona (Wuzu/Ghusl).</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">2. Kapde ka napaaki se paak hona.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">3. Namaz padhne ki jagah ka paak hona.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">4. Satar ka dhaka hona.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">5. Namaz ka sahi waqt hona.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">6. Qibla (Kaaba) ki taraf rukh hona.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200">7. Dil mein namaz ki Niyat hona.</li>
+                    </ul>
+                </div>
+
+                <div class="pro-card rounded-2xl p-5">
+                    <div class="text-xs font-extrabold text-gold-700 uppercase">Namaz Ke Andar</div>
+                    <h3 class="text-lg font-extrabold text-emerald-950 mt-0.5 mb-3">✨ Namaz Ke 6 Faraiz (Arkaan)</h3>
+                    <p class="text-xs text-emerald-800 mb-3">Namaz ke andar ke 6 laazmi hisse:</p>
+                    <ul class="space-y-2 text-xs sm:text-sm text-emerald-950 font-medium">
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200"><strong>1. Takbeer-e-Tahreema:</strong> Shuru mein 'Allahu Akbar' kehna.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200"><strong>2. Qiyam:</strong> Seedhe khade hona.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200"><strong>3. Qira'at:</strong> Quran ki aayatein padhna.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200"><strong>4. Ruku:</strong> Ghutno par haath rakh kar jhukna.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200"><strong>5. Sujood:</strong> Har rakat mein do sajde karna.</li>
+                        <li class="p-2 rounded-lg bg-ivory-50 border border-ivory-200"><strong>6. Qa'dah Akheerah:</strong> Aakhiri baithak mein Attahiyyat ki miqdar baithna.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Farz vs Sunnat 3rd/4th Rakat Important Rule -->
+            <div class="pro-card rounded-2xl p-5 bg-gold-100/50 border-gold-500/40">
+                <h4 class="text-base font-extrabold text-emerald-950">💡 2 Rakat, 3 Rakat aur 4 Rakat Mein Kya Farq Hota Hai? (Zaroori Yaad Rakhein)</h4>
+                <div class="grid sm:grid-cols-2 gap-3 mt-3 text-xs sm:text-sm text-emerald-900">
+                    <div class="p-3.5 rounded-xl bg-white border border-gold-500/30">
+                        <strong class="text-emerald-950 block mb-1">📌 Farz Namaz Ki 3ri aur 4thi Rakat:</strong>
+                        Zohar, Asr, Maghrib aur Isha ke <strong>Farz</strong> mein pehli 2 rakat ke baad Attahiyyat padh kar jab 3ri rakat ke liye uthte hain, toh 3ri aur 4thi rakat mein <strong>sirf Bismillah aur Surah Fatiha</strong> padhi jaati hai (alag se Surah nahi milayi jaati).
+                    </div>
+                    <div class="p-3.5 rounded-xl bg-white border border-gold-500/30">
+                        <strong class="text-emerald-950 block mb-1">📌 Sunnat, Nafl aur Witr Ki Har Rakat:</strong>
+                        4 Rakat Sunnat, Nafl ya 3 Rakat Witr ki <strong>har rakat (1st, 2nd, 3rd, 4th)</strong> mein Surah Fatiha ke baad koi ek Surah milana zaroori hai.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer, Sadaqah-e-Jariyah Share Banner & Polite Disclaimer -->
+    <footer class="max-w-5xl mx-auto px-3 sm:px-5 mt-12 pt-8 border-t border-gold-500/30 text-center space-y-5">
+        
+        <!-- Sadaqah-e-Jariyah Share Box -->
+        <div class="max-w-xl mx-auto p-4 sm:p-5 rounded-2xl bg-white border border-gold-500/40 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div class="text-center sm:text-left">
+                <span class="text-[10px] font-extrabold uppercase tracking-wider text-gold-700">Sadaqah-e-Jariyah</span>
+                <h4 class="text-sm sm:text-base font-extrabold text-emerald-950">Dusron Tak Namaz Ka Tarjuma Pahunchayein</h4>
+                <p class="text-xs text-emerald-800">Apne ghar walon aur doston ke sath WhatsApp par share karein.</p>
+            </div>
+            <button onclick="shareWebsite()" class="wa-btn px-4 py-2.5 rounded-xl text-xs sm:text-sm font-extrabold flex items-center gap-2 shrink-0 shadow-sm">
+                <svg class="w-4 h-4 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.124.556 4.119 1.528 5.847l-1.528 5.581 5.713-1.499c1.682.905 3.606 1.421 5.654 1.421 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+                <span>WhatsApp Par Bhejein</span>
+            </button>
+        </div>
+
+        <div>
+            <p class="arabic-text text-xl text-emerald-900">رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ</p>
+            <p class="text-xs font-bold text-emerald-900 mt-1">AKMAL GUIDANCE • Built as Sadaqah-e-Jariyah for the Ummah</p>
+        </div>
+
+        <!-- Disclaimer Box -->
+        <div class="max-w-3xl mx-auto p-4 sm:p-5 rounded-2xl bg-white border border-gold-500/40 text-left shadow-sm">
+            <div class="flex items-start gap-2.5">
+                <span class="text-base shrink-0">⚠️</span>
+                <div class="text-[11px] sm:text-xs text-emerald-900 leading-relaxed">
+                    <strong class="text-emerald-950 uppercase tracking-wide block mb-0.5">Disclaimer & Roohani Guzarish (Zaroori Note):</strong>
+                    Is website (<strong>Akmal Guidance</strong>) ko banane ka maqsad sirf Allah ki raza ke liye aam musalmano tak Namaz aur Masnoon Duaon ka asaan tarjuma pahunchana hai. Tamaam Arabic alfaaz, zabar-zer-pesh (tashkeel) aur tarjume ko mustanad deeni kitabon se bar-bar mila kar poori ehtiyat ke sath likha gaya hai. Phir bhi insani koshish ya mobile/browser ke font display ki wajah se agar kahin koi typing ki kami-beshi nazar aaye, toh hum Allah ki bargah mein maafi ke talabgar hain aur padhne walon se guzarish karte hain ki kisi muqami Aalim-e-Deen ya Mufti sahab se tasdeeq kar lein.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const SITE_URL = "https://akmalguidance.netlify.app/";
+        let currentStageFilter = 'ALL';
+        let allWbwOpen = false;
+
+        // =========================================================================
+        // 1. COMPLETE 15 STEPS OF NAMAZ (100% VERIFIED ARABIC, TALAFFUZ & TARJUMA)
+        // =========================================================================
+        const namazSteps = [
+            {
+                step: 1,
+                stage: "QIYAM",
+                sectionBadge: "📍 SHURUAT: TAKBEER-E-TAHREEMA (Khade Hokar)",
+                whenToRead: "Qibla ki taraf rukh karke, dil mein niyat karein aur dono haath kaano tak utha kar kahein:",
+                title: "Takbeer-e-Tahreema (تَكْبِيرَةُ الْإِحْرَام)",
+                arabic: "اللَّهُ أَكْبَرُ",
+                hinglish: "Allahu Akbar",
+                tarjuma: "Allah sabse bada hai.",
+                urduScript: "اللہ سب سے بڑا ہے۔",
+                wordByWord: [
+                    { ar: "اللَّهُ", hi: "Allahu", meaning: "Allah" },
+                    { ar: "أَكْبَرُ", hi: "Akbar", meaning: "Sabse bada hai" }
+                ]
+            },
+            {
+                step: 2,
+                stage: "QIYAM",
+                sectionBadge: "📍 SECTION: QIYAM (1st Rakat Mein Haath Bandh Kar)",
+                whenToRead: "Pehli rakat mein Takbeer ke fauran baad haath bandh kar aahista aawaz mein padhein:",
+                title: "Sana / Thana (ثَنَاء)",
+                arabic: "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، وَتَبَارَكَ اسْمُكَ، وَتَعَالَىٰ جَدُّكَ، وَلَا إِلَٰهَ غَيْرُكَ",
+                hinglish: "Subhanaka Allahumma wa bihamdika, wa tabarakasmuka, wa ta'ala jadduka, wa la ilaha ghairuk.",
+                tarjuma: "Aye Allah! Tu har aib se paak hai aur Teri hi tareef hai, Tera naam badi barkat wala hai, Teri shaan aur azmat sabse buland hai, aur Tere siwa koi ibadat ke layaq nahi.",
+                urduScript: "اے اللہ! تو پاک ہے اور تیری ہی تعریف ہے، تیرا نام بابرکت ہے، تیری شان سب سے بلند ہے اور تیرے سوا کوئی معبود نہیں۔",
+                wordByWord: [
+                    { ar: "سُبْحَانَكَ اللَّهُمَّ", hi: "Subhanaka Allahumma", meaning: "Paak hai Tu Aye Allah" },
+                    { ar: "وَبِحَمْدِكَ", hi: "Wa bihamdika", meaning: "Aur Teri hi tareef ke sath" },
+                    { ar: "وَتَبَارَكَ اسْمُكَ", hi: "Wa tabarakasmuka", meaning: "Aur barkat wala hai Tera naam" },
+                    { ar: "وَتَعَالَىٰ جَدُّكَ", hi: "Wa ta'ala jadduka", meaning: "Aur bahut buland hai Teri shaan" },
+                    { ar: "وَلَا إِلَٰهَ غَيْرُكَ", hi: "Wa la ilaha ghairuk", meaning: "Aur Tere siwa koi ma'bood nahi" }
+                ]
+            },
+            {
+                step: 3,
+                stage: "QIYAM",
+                sectionBadge: "📍 SECTION: QIYAM (Surah Fatiha Se Pehle)",
+                whenToRead: "Sana ke baad aahista aawaz mein Ta'awwuz aur Tasmiyah padhein:",
+                title: "Ta'awwuz & Tasmiyah (تَعَوُّذ وَ تَسْمِيَة)",
+                arabic: "أَعُوذُ بِاللَّهِ مِنَ الشَّيْطَانِ الرَّجِيمِ ۝ بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ",
+                hinglish: "A'udhu billahi minash-shaitanir-rajeem. Bismillahir-Rahmanir-Raheem.",
+                tarjuma: "Main dhutkare hue Shaitan se Allah ki panah mangta hoon. Allah ke naam se shuru jo behad Meherban aur hamesha Reham farmane wala hai.",
+                urduScript: "میں دھتکارے ہوئے شیطان سے اللہ کی پناہ مانگتا ہوں۔ اللہ کے نام سے شروع جو بے حد مہربان اور رحم فرمانے والا ہے۔",
+                wordByWord: [
+                    { ar: "أَعُوذُ بِاللَّهِ", hi: "A'udhu billahi", meaning: "Main Allah ki panah mangta hoon" },
+                    { ar: "مِنَ الشَّيْطَانِ الرَّجِيمِ", hi: "Minash-shaitanir-rajeem", meaning: "Mardood/dhutkare hue shaitan se" },
+                    { ar: "بِسْمِ اللَّهِ", hi: "Bismillahi", meaning: "Allah ke naam se shuru" },
+                    { ar: "الرَّحْمَٰنِ الرَّحِيمِ", hi: "Ar-Rahmanir-Raheem", meaning: "Jo bada Meherban, nihayat Reham wala hai" }
+                ]
+            },
+            {
+                step: 4,
+                stage: "QIYAM",
+                sectionBadge: "📍 SECTION: QIYAM (Har Rakat Mein Padhna Laazmi)",
+                whenToRead: "Khade hokar padhein (Imam ke peeche hon toh khamoshi se sunein):",
+                title: "Surah Al-Fatiha (سُورَةُ الْفَاتِحَة)",
+                arabic: "الْحَمْدُ لِلَّهِ رَبِّ الْعَالَمِينَ ۝ الرَّحْمَٰنِ الرَّحِيمِ ۝ مَالِكِ يَوْمِ الدِّينِ ۝ إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ ۝ اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ ۝ صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ وَلَا الضَّالِّينَ ۝ آمِين",
+                hinglish: "Alhamdu lillahi Rabbil-'aalameen. Ar-Rahmanir-Raheem. Maliki yawmid-deen. Iyyaka na'budu wa iyyaka nasta'een. Ihdinas-siratal-mustaqeem. Siratal-lazeena an'amta 'alaihim, ghairil-maghdoobi 'alaihim wa lad-daaalleen. (Aameen)",
+                tarjuma: "Tamam tareefein aur shukr Allah hi ke liye hain jo saare jahaano ka Paalne wala hai. Jo bada Meherban, nihayat Reham karne wala hai. Jo badle aur hisab ke din (Qayamat) ka Maalik hai. (Aye Allah!) Hum sirf Teri hi ibadat karte hain aur sirf Tujh hi se madad mangte hain. Humein seedha rasta dikha aur us par chala. Un logon ka rasta jin par Tu ne apna inaam aur fazal kiya, na ki unka rasta jin par gussa (ghazab) hua aur na hi unka jo bhatak gaye. (Aameen: Aye Allah! Qubool farma).",
+                urduScript: "تمام تعریفیں اللہ ہی کے لیے ہیں جو سارے جہانوں کا پالنہار ہے۔ بے حد مہربان، نہایت رحم والا۔ روزِ جزا کا مالک۔ ہم تیری ہی عبادت کرتے ہیں اور تجھ ہی سے مدد مانگتے ہیں۔ ہمیں سیدھے راستے پر چلا۔ ان لوگوں کے راستے پر جن پر تو نے انعام فرمایا، نہ کہ ان کے جن پر غضب ہوا اور نہ بھٹکنے والوں کے۔ (آمین)",
+                wordByWord: [
+                    { ar: "الْحَمْدُ لِلَّهِ", hi: "Alhamdu lillahi", meaning: "Sab tareef aur shukr Allah ke liye hai" },
+                    { ar: "رَبِّ الْعَالَمِينَ", hi: "Rabbil-'aalameen", meaning: "Jo saare jahaano ka Paalne wala hai" },
+                    { ar: "الرَّحْمَٰنِ الرَّحِيمِ", hi: "Ar-Rahmanir-Raheem", meaning: "Behad Meherban, nihayat Reham wala" },
+                    { ar: "مَالِكِ يَوْمِ الدِّينِ", hi: "Maliki yawmid-deen", meaning: "Badle (Qayamat) ke din ka Maalik" },
+                    { ar: "إِيَّاكَ نَعْبُدُ", hi: "Iyyaka na'budu", meaning: "Hum sirf Teri hi ibadat karte hain" },
+                    { ar: "وَإِيَّاكَ نَسْتَعِينُ", hi: "Wa iyyaka nasta'een", meaning: "Aur sirf Tujh hi se madad mangte hain" },
+                    { ar: "اهْدِنَا الصِّرَاطَ الْمُسْتَقِيمَ", hi: "Ihdinas-siratal-mustaqeem", meaning: "Humein seedha rasta dikha" },
+                    { ar: "صِرَاطَ الَّذِينَ أَنْعَمْتَ عَلَيْهِمْ", hi: "Siratal-lazeena an'amta 'alaihim", meaning: "Unka rasta jin par Tu ne inaam kiya" },
+                    { ar: "غَيْرِ الْمَغْضُوبِ عَلَيْهِمْ", hi: "Ghairil-maghdoobi 'alaihim", meaning: "Na ki woh jin par gussa/ghazab hua" },
+                    { ar: "وَلَا الضَّالِّينَ", hi: "Wa lad-daalleen", meaning: "Aur na hi bhatke huon ka" }
+                ]
+            },
+            {
+                step: 5,
+                stage: "QIYAM",
+                sectionBadge: "📍 SECTION: QIYAM (Surah Fatiha Ke Baad - 1st Rakat)",
+                whenToRead: "Surah Fatiha ke baad koi bhi ek Surah milayein (Jaise 1st Rakat mein Surah Al-Kausar):",
+                title: "Surah Al-Kausar (سُورَةُ الْكَوْثَر)",
+                arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ إِنَّا أَعْطَيْنَاكَ الْكَوْثَرَ ۝ فَصَلِّ لِرَبِّكَ وَانْحَرْ ۝ إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ",
+                hinglish: "Bismillahir-Rahmanir-Raheem. Inna a'tainakal-Kausar. Fasalli li-Rabbika wanhar. Inna shani'aka huwal-abtar.",
+                tarjuma: "(Aye Nabi ﷺ!) Beshak humne Aapko 'Kausar' (Jannat ka hauz aur behisab bhalai) ata farmayi hai. Isliye Aap apne Rab hi ke liye namaz padhiye aur qurbani kijiye. Beshak Aapka dushman hi be-naam-o-nishan reh jane wala hai.",
+                urduScript: "بے شک ہم نے آپ ﷺ کو کوثر (بے حساب خیر اور حوضِ کوثر) عطا فرمایا۔ پس اپنے رب ہی کے لیے نماز پڑھئے اور قربانی کیجئے۔ بے شک آپ کا دشمن ہی بے نام و نشان رہے گا۔",
+                wordByWord: [
+                    { ar: "إِنَّا أَعْطَيْنَاكَ", hi: "Inna a'tainaka", meaning: "Beshak humne Aapko ata kiya" },
+                    { ar: "الْكَوْثَرَ", hi: "Al-Kausar", meaning: "Hauz-e-Kausar / Behisab bhalai" },
+                    { ar: "فَصَلِّ لِرَبِّكَ", hi: "Fasalli li-Rabbika", meaning: "Pas apne Rab ke liye namaz padhiye" },
+                    { ar: "وَانْحَرْ", hi: "Wanhar", meaning: "Aur qurbani kijiye" },
+                    { ar: "إِنَّ شَانِئَكَ هُوَ الْأَبْتَرُ", hi: "Inna shani'aka huwal-abtar", meaning: "Beshak aapka dushman hi jadh-kata hai" }
+                ]
+            },
+            {
+                step: 6,
+                stage: "QIYAM",
+                sectionBadge: "📍 SECTION: QIYAM (Surah Fatiha Ke Baad - 2nd Rakat)",
+                whenToRead: "Dusri rakat mein Surah Fatiha ke baad Surah Al-Ikhlas padh sakte hain:",
+                title: "Surah Al-Ikhlas (سُورَةُ الْإِخْلَاص)",
+                arabic: "بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ ۝ قُلْ هُوَ اللَّهُ أَحَدٌ ۝ اللَّهُ الصَّمَدُ ۝ لَمْ يَلِدْ وَلَمْ يُولَدْ ۝ وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ",
+                hinglish: "Bismillahir-Rahmanir-Raheem. Qul Huwallahu Ahad. Allahus-Samad. Lam yalid wa lam yoolad. Wa lam yakul-lahu kufuwan ahad.",
+                tarjuma: "Keh dijiye: Woh Allah Ek aur Akela hai. Allah Be-niyaz hai (saari makhlooq Uski mohtaj hai, Woh kisi ka mohtaj nahi). Na Uske koi aulad hai aur na Woh kisi ki aulad hai. Aur Uski barabari karne wala koi ek bhi nahi hai.",
+                urduScript: "کہہ دیجئے کہ وہ اللہ ایک ہے۔ اللہ بے نیاز ہے (سب اس کے محتاج ہیں)۔ نہ اس کی کوئی اولاد ہے اور نہ وہ کسی سے پیدا ہوا۔ اور کوئی ایک بھی اس کے برابر کا نہیں ہے۔",
+                wordByWord: [
+                    { ar: "قُلْ هُوَ اللَّهُ أَحَدٌ", hi: "Qul Huwallahu Ahad", meaning: "Kaho Woh Allah Ek hai" },
+                    { ar: "اللَّهُ الصَّمَدُ", hi: "Allahus-Samad", meaning: "Allah Be-niyaz hai" },
+                    { ar: "لَمْ يَلِدْ", hi: "Lam yalid", meaning: "Na Usne kisi ko paida kiya" },
+                    { ar: "وَلَمْ يُولَدْ", hi: "Wa lam yoolad", meaning: "Aur na Woh kisi se paida hua" },
+                    { ar: "وَلَمْ يَكُنْ لَهُ كُفُوًا أَحَدٌ", hi: "Wa lam yakul-lahu kufuwan ahad", meaning: "Aur Uske barabar koi ek bhi nahi" }
+                ]
+            },
+            {
+                step: 7,
+                stage: "RUKU_SAJDA",
+                sectionBadge: "📍 SECTION: RUKU (Ghutno Par Haath Rakh Kar Jhukna)",
+                whenToRead: "'Allahu Akbar' kehte hue Ruku mein jhukein aur kam se kam 3, 5 ya 7 baar padhein:",
+                title: "Ruku Ki Tasbeeh (تَسْبِيحُ الرُّكُوع)",
+                arabic: "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+                hinglish: "Subhana Rabbiyal-'Azeem (3 baar)",
+                tarjuma: "Paak hai mera Rab jo sabse badi Azmat aur Shaan wala hai.",
+                urduScript: "پاک ہے میرا رب جو سب سے بڑی عظمت اور شان والا ہے۔",
+                wordByWord: [
+                    { ar: "سُبْحَانَ", hi: "Subhana", meaning: "Har aib se paak hai" },
+                    { ar: "رَبِّيَ", hi: "Rabbiyal", meaning: "Mera Rab (Paalne wala)" },
+                    { ar: "الْعَظِيمِ", hi: "Al-'Azeem", meaning: "Sabse badi Azmat wala" }
+                ]
+            },
+            {
+                step: 8,
+                stage: "RUKU_SAJDA",
+                sectionBadge: "📍 SECTION: QAUMAH (Ruku Se Uth Kar Seedha Khada Hona)",
+                whenToRead: "Ruku se uthte waqt pehla hissa kahein, aur jab bilkul seedhe khade ho jayein toh dusra hissa padhein:",
+                title: "Qaumah - Tasmee' & Tahmeed (قَوْمَة)",
+                arabic: "سَمِعَ اللَّهُ لِمَنْ حَمِدَهُ ۝ رَبَّنَا وَلَكَ الْحَمْدُ (حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ)",
+                hinglish: "Sami'Allahu liman hamidah. Rabbana wa lakal-hamd (Hamdan kaseeran tayyiban mubarakan feeh).",
+                tarjuma: "Allah ne us bande ki pukaar sun li jisne Uski tareef ki. Aye humare Rab! Tere hi liye saari tareefein hain (bahut zyada, pakeeza aur barkat wali tareef).",
+                urduScript: "اللہ نے اس بندے کی سن لی جس نے اس کی تعریف کی۔ اے ہمارے رب! تیرے ہی لیے تمام تعریفیں ہیں (بہت زیادہ، پاکیزہ اور بابرکت تعریف)۔",
+                wordByWord: [
+                    { ar: "سَمِعَ اللَّهُ", hi: "Sami'Allahu", meaning: "Allah ne sun liya" },
+                    { ar: "لِمَنْ حَمِدَهُ", hi: "Liman hamidah", meaning: "Usay jisne Uski tareef ki" },
+                    { ar: "رَبَّنَا وَلَكَ الْحَمْدُ", hi: "Rabbana wa lakal-hamd", meaning: "Aye humare Rab! Tere hi liye sab tareef hai" },
+                    { ar: "حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ", hi: "Hamdan kaseeran tayyiban mubarakan feeh", meaning: "Bahut zyada, pakeeza aur barkat wali tareef" }
+                ]
+            },
+            {
+                step: 9,
+                stage: "RUKU_SAJDA",
+                sectionBadge: "📍 SECTION: SAJDA (Zameen Par Peshani Tikana)",
+                whenToRead: "'Allahu Akbar' kehte hue Sajde mein jayein aur 3, 5 ya 7 baar padhein:",
+                title: "Sajda Ki Tasbeeh (تَسْبِيحُ السُّجُود)",
+                arabic: "سُبْحَانَ رَبِّيَ الْأَعْلَىٰ",
+                hinglish: "Subhana Rabbiyal-A'la (3 baar)",
+                tarjuma: "Paak hai mera Rab jo sabse Buland aur sabse Upar hai.",
+                urduScript: "پاک ہے میرا رب جو سب سے بلند اور سب سے اعلیٰ ہے۔",
+                wordByWord: [
+                    { ar: "سُبْحَانَ", hi: "Subhana", meaning: "Paak hai" },
+                    { ar: "رَبِّيَ", hi: "Rabbiyal", meaning: "Mera Rab" },
+                    { ar: "الْأَعْلَىٰ", hi: "Al-A'la", meaning: "Jo sabse Buland / Upar hai" }
+                ]
+            },
+            {
+                step: 10,
+                stage: "RUKU_SAJDA",
+                sectionBadge: "📍 SECTION: JALSA (Dono Sajdon Ke Beech Baithna)",
+                whenToRead: "Pehle sajde se uth kar jab do sajdon ke darmiyan seedhe baithein, tab yeh dua padhein (phir dusra sajda karein):",
+                title: "Jalsa Ki Dua (دُعَاءُ الْجَلْسَة)",
+                arabic: "اللَّهُمَّ اغْفِرْ لِي، وَارْحَمْنِي، وَاهْدِنِي، وَعَافِنِي، وَارْزُقْنِي",
+                hinglish: "Allahummaghfir li, warhamni, wahdini, wa 'aafini, warzuqni. (Ya chhota: Rabbighfir li, Rabbighfir li)",
+                tarjuma: "Aye Allah! Mujhe maaf farma, mujh par reham farma, mujhe seedhi raah dikha, mujhe aafiyat (sehat o salamati) de aur mujhe halal rizq ata farma.",
+                urduScript: "اے اللہ! مجھے معاف فرما، مجھ پر رحم فرما، مجھے ہدایت دے، مجھے عافیت نصیب کر اور مجھے رزق عطا فرما۔",
+                wordByWord: [
+                    { ar: "اللَّهُمَّ اغْفِرْ لِي", hi: "Allahummaghfir li", meaning: "Aye Allah mujhe maaf farma" },
+                    { ar: "وَارْحَمْنِي", hi: "Warhamni", meaning: "Aur mujh par reham kar" },
+                    { ar: "وَاهْدِنِي", hi: "Wahdini", meaning: "Aur mujhe hidayat de" },
+                    { ar: "وَعَافِنِي", hi: "Wa 'aafini", meaning: "Aur mujhe salamati/aafiyat de" },
+                    { ar: "وَارْزُقْنِي", hi: "Warzuqni", meaning: "Aur mujhe rizq ata farma" }
+                ]
+            },
+            {
+                step: 11,
+                stage: "QADAH",
+                sectionBadge: "📍 SECTION: QA'DAH (2nd Aur Aakhiri Rakat Mein Baith Kar)",
+                whenToRead: "Dusri rakat ke dono sajdon ke baad baith kar padhein ('La ilaha' par shahadat ki ungli uthayein aur 'Illallah' par jhuka dein):",
+                title: "Attahiyyat / Tashahhud (التَّشَهُّد / التَّحِيَّات)",
+                arabic: "التَّحِيَّاتُ لِلَّهِ وَالصَّلَوَاتُ وَالطَّيِّبَاتُ، السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ، السَّلَامُ عَلَيْنَا وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ، أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+                hinglish: "Attahiyyatu lillahi was-salawatu wat-tayyibatu, Assalamu 'alaika ayyuhan-Nabiyyu wa rahmatullahi wa barakatuh, Assalamu 'alaina wa 'ala 'ibadillahis-saliheen. Ash-hadu an la ilaha illallahu wa ash-hadu anna Muhammadan 'abduhu wa rasooluh.",
+                tarjuma: "Tamam zabaani ibadatein, badani ibadatein aur maali ibadatein sirf Allah hi ke liye hain. Salaam ho Aap par Aye Nabi (ﷺ) aur Allah ki rehmat aur Uski barkatein hon. Salaam ho hum par aur Allah ke saare nek bandon par. Main gawahi deta hoon ki Allah ke siwa koi ibadat ke layaq nahi, aur main gawahi deta hoon ki Hazrat Muhammad (ﷺ) Allah ke khaas bande aur Uske Rasool hain.",
+                urduScript: "تمام زبانی، بدنی اور مالی عبادتیں اللہ ہی کے لیے ہیں۔ سلام ہو آپ پر اے نبی ﷺ اور اللہ کی رحمت اور اس کی برکتیں نازل ہوں۔ سلامتی ہو ہم پر اور اللہ کے تمام نیک بندوں پر۔ میں گواہی دیتا ہوں کہ اللہ کے سوا کوئی عبادت کے لائق نہیں اور میں گواہی دیتا ہوں کہ حضرت محمد ﷺ اللہ کے بندے اور اس کے رسول ہیں۔",
+                wordByWord: [
+                    { ar: "التَّحِيَّاتُ لِلَّهِ", hi: "Attahiyyatu lillahi", meaning: "Tamam zabaani ta'zeem Allah ke liye hai" },
+                    { ar: "وَالصَّلَوَاتُ وَالطَّيِّبَاتُ", hi: "Was-salawatu wat-tayyibat", meaning: "Aur badani aur pakeeza maali ibadatein bhi" },
+                    { ar: "السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ", hi: "Assalamu 'alaika ayyuhan-Nabiyyu", meaning: "Salaam ho Aap par Aye Nabi (ﷺ)" },
+                    { ar: "وَرَحْمَةُ اللَّهِ وَبَرَكَاتُهُ", hi: "Wa rahmatullahi wa barakatuh", meaning: "Aur Allah ki rehmat aur barkatein" },
+                    { ar: "السَّلَامُ عَلَيْنَا", hi: "Assalamu 'alaina", meaning: "Salaam ho hum par" },
+                    { ar: "وَعَلَىٰ عِبَادِ اللَّهِ الصَّالِحِينَ", hi: "Wa 'ala 'ibadillahis-saliheen", meaning: "Aur Allah ke nek bandon par" },
+                    { ar: "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللَّهُ", hi: "Ash-hadu an la ilaha illallah", meaning: "Main gawahi deta hoon ki Allah ke siwa koi ma'bood nahi" },
+                    { ar: "وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ", hi: "Wa ash-hadu anna Muhammadan 'abduhu wa rasooluh", meaning: "Aur gawahi deta hoon ki Muhammad ﷺ Uske bande aur Rasool hain" }
+                ]
+            },
+            {
+                step: 12,
+                stage: "QADAH",
+                sectionBadge: "📍 SECTION: AAKHIRI QA'DAH (Attahiyyat Ke Baad)",
+                whenToRead: "Namaz ki aakhiri rakat ki baithak mein Attahiyyat ke baad Durood-e-Ibrahimi padhein:",
+                title: "Durood-e-Ibrahimi (الصَّلَاةُ الْإِبْرَاهِيمِيَّة)",
+                arabic: "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ ۝ اللَّهُمَّ بَارِكْ عَلَىٰ مُحَمَّدٍ وَعَلَىٰ آلِ مُحَمَّدٍ، كَمَا بَارَكْتَ عَلَىٰ إِبْرَاهِيمَ وَعَلَىٰ آلِ إِبْرَاهِيمَ، إِنَّكَ حَمِيدٌ مَجِيدٌ",
+                hinglish: "Allahumma salli 'ala Muhammadin wa 'ala aali Muhammadin, kama sallaita 'ala Ibrahima wa 'ala aali Ibrahima, innaka Hameedum-Majeed. Allahumma barik 'ala Muhammadin wa 'ala aali Muhammadin, kama barakta 'ala Ibrahima wa 'ala aali Ibrahima, innaka Hameedum-Majeed.",
+                tarjuma: "Aye Allah! Rehmat bhej Hazrat Muhammad (ﷺ) par aur Aap (ﷺ) ki Aal (ghar walon aur sachche pairaukaron) par, jis tarah Tu ne rehmat bheji Hazrat Ibrahim (A.S) par aur Hazrat Ibrahim (A.S) ki Aal par. Beshak Tu har tareef ke layaq aur badi Buzurgi wala hai. Aye Allah! Barkat nazil farma Hazrat Muhammad (ﷺ) par aur Aap (ﷺ) ki Aal par, jis tarah Tu ne barkat nazil farmayi Hazrat Ibrahim (A.S) par aur Hazrat Ibrahim (A.S) ki Aal par. Beshak Tu har tareef ke layaq aur badi Shaan wala hai.",
+                urduScript: "اے اللہ! رحمت نازل فرما حضرت محمد ﷺ پر اور آپ ﷺ کی آل پر، جس طرح تو نے رحمت نازل فرمائی حضرت ابراہیم علیہ السلام اور ان کی آل پر، بے شک تو تعریف والا اور بزرگی والا ہے۔ اے اللہ! برکت نازل فرما حضرت محمد ﷺ پر اور آپ ﷺ کی آل پر، جس طرح تو نے برکت نازل فرمائی حضرت ابراہیم علیہ السلام اور ان کی آل پر، بے شک تو تعریف والا اور بڑی شان والا ہے۔",
+                wordByWord: [
+                    { ar: "اللَّهُمَّ صَلِّ عَلَىٰ مُحَمَّدٍ", hi: "Allahumma salli 'ala Muhammad", meaning: "Aye Allah rehmat bhej Muhammad ﷺ par" },
+                    { ar: "وَعَلَىٰ آلِ مُحَمَّدٍ", hi: "Wa 'ala aali Muhammad", meaning: "Aur Muhammad ﷺ ki Aal par" },
+                    { ar: "كَمَا صَلَّيْتَ عَلَىٰ إِبْرَاهِيمَ", hi: "Kama sallaita 'ala Ibrahim", meaning: "Jaise Tu ne rehmat bheji Ibrahim (A.S) par" },
+                    { ar: "اللَّهُمَّ بَارِكْ", hi: "Allahumma barik", meaning: "Aye Allah barkat nazil farma" },
+                    { ar: "كَمَا بَارَكْتَ", hi: "Kama barakta", meaning: "Jaise Tu ne barkat nazil farmayi" },
+                    { ar: "إِنَّكَ حَمِيدٌ مَجِيدٌ", hi: "Innaka Hameedum-Majeed", meaning: "Beshak Tu Tareef wala, badi Shaan wala hai" }
+                ]
+            },
+            {
+                step: 13,
+                stage: "QADAH",
+                sectionBadge: "📍 SECTION: AAKHIRI QA'DAH (Salaam Se Pehle Ki Dua)",
+                whenToRead: "Durood-e-Ibrahimi ke baad Salaam pherne se pehle yeh dua padhein:",
+                title: "Dua-e-Masura (دُعَاءُ الْمَأْثُورَة)",
+                arabic: "رَبِّ اجْعَلْنِي مُقِيمَ الصَّلَاةِ وَمِنْ ذُرِّيَّتِي ۚ رَبَّنَا وَتَقَبَّلْ دُعَاءِ ۝ رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ",
+                hinglish: "Rabbij'alni muqeemas-salati wa min dhurriyyati, Rabbana wa taqabbal du'aa. Rabbanaghfir li wa liwalidayya wa lil-mu'mineena yawma yaqoomul-hisab.",
+                tarjuma: "Aye mere Rab! Mujhe pabandi se namaz qaayam karne wala bana aur meri aulad mein se bhi (namazi bana). Aye humare Rab! Aur meri dua qubool farma. Aye humare Rab! Meri maghfirat farma (mujhe bakhsh de), aur mere Maa-Baap ko aur tamam Imaan walon ko us din maaf farma jab Qayamat ka hisab qaayam hoga.",
+                urduScript: "اے میرے رب! مجھے نماز قائم کرنے والا بنا اور میری اولاد میں سے بھی، اے ہمارے رب! اور میری دعا قبول فرما۔ اے ہمارے رب! مجھے، میرے والدین کو اور تمام ایمان والوں کو اس دن بخش دے جب حساب قائم ہوگا۔",
+                wordByWord: [
+                    { ar: "رَبِّ اجْعَلْنِي", hi: "Rabbij'alni", meaning: "Aye mere Rab mujhe bana de" },
+                    { ar: "مُقِيمَ الصَّلَاةِ", hi: "Muqeemas-salati", meaning: "Namaz qaayam karne wala" },
+                    { ar: "وَمِنْ ذُرِّيَّتِي", hi: "Wa min dhurriyyati", meaning: "Aur meri aulad mein se bhi" },
+                    { ar: "رَبَّنَا وَتَقَبَّلْ دُعَاءِ", hi: "Rabbana wa taqabbal du'aa", meaning: "Aye humare Rab aur meri dua qubool kar" },
+                    { ar: "رَبَّنَا اغْفِرْ لِي وَلِوَالِدَيَّ", hi: "Rabbanaghfir li wa liwalidayya", meaning: "Aye humare Rab mujhe aur mere Maa-Baap ko bakhsh de" },
+                    { ar: "وَلِلْمُؤْمِنِينَ يَوْمَ يَقُومُ الْحِسَابُ", hi: "Wa lil-mu'mineena yawma yaqoomul-hisab", meaning: "Aur sab momino ko jis din hisab khada hoga" }
+                ]
+            },
+            {
+                step: 14,
+                stage: "QADAH",
+                sectionBadge: "📍 SECTION: IKHTITAM (Salaam Pher Kar Namaz Mukammal Karna)",
+                whenToRead: "Pehle daayein (Right) kandhe ki taraf chehra pher kar kahein, phir baayein (Left) kandhe ki taraf:",
+                title: "Salaam / Tasleem (التَّسْلِيم)",
+                arabic: "السَّلَامُ عَلَيْكُمْ وَرَحْمَةُ اللَّهِ",
+                hinglish: "Assalamu 'Alaikum wa Rahmatullah (Right & Left)",
+                tarjuma: "Tum par salamati ho aur Allah ki rehmat ho.",
+                urduScript: "تم پر سلامتی ہو اور اللہ کی رحمت نازل ہو۔",
+                wordByWord: [
+                    { ar: "السَّلَامُ عَلَيْكُمْ", hi: "Assalamu 'Alaikum", meaning: "Tum par salamati ho" },
+                    { ar: "وَرَحْمَةُ اللَّهِ", hi: "Wa Rahmatullah", meaning: "Aur Allah ki rehmat ho" }
+                ]
+            },
+            {
+                step: 15,
+                stage: "WITR",
+                sectionBadge: "📍 SECTION: WITR WAJIB (Isha Mein 3ri Rakat Ki Khas Dua)",
+                whenToRead: "Isha ki 3 Rakat Witr ki 3ri rakat mein Surah milane ke baad 'Allahu Akbar' keh kar padhein:",
+                title: "Dua-e-Qunut (دُعَاءُ الْقُنُوت)",
+                arabic: "اللَّهُمَّ إِنَّا نَسْتَعِينُكَ وَنَسْتَغْفِرُكَ، وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ، وَنُثْنِي عَلَيْكَ الْخَيْرَ، وَنَشْكُرُكَ وَلَا نَكْفُرُكَ، وَنَخْلَعُ وَنَتْرُكُ مَنْ يَفْجُرُكَ ۝ اللَّهُمَّ إِيَّاكَ نَعْبُدُ وَلَكَ نُصَلِّي وَنَسْجُدُ، وَإِلَيْكَ نَسْعَىٰ وَنَحْفِدُ، وَنَرْجُو رَحْمَتَكَ وَنَخْشَىٰ عَذَابَكَ، إِنَّ عَذَابَكَ بِالْكُفَّارِ مُلْحِقٌ",
+                hinglish: "Allahumma inna nasta'eenuka wa nastaghfiruka, wa nu'minu bika wa natawakkalu 'alaika, wa nuthni 'alaikal-khair, wa nashkuruka wa la nakfuruka, wa nakhla'u wa natruku man yafjuruk. Allahumma iyyaka na'budu wa laka nusalli wa nasjudu, wa ilaika nas'aa wa nahfidu, wa narjoo rahmataka wa nakhsha 'adhabaka, inna 'adhabaka bil-kuffari mulhiq.",
+                tarjuma: "Aye Allah! Hum Tujh hi se madad mangte hain aur Tujh hi se maafi talab karte hain, Tujh par imaan rakhte hain aur Tujh par hi bharosa karte hain, aur Teri behtareen tareef karte hain. Hum Tera shukr ada karte hain aur Teri na-shukri nahi karte, aur har us shaks se alag hote hain jo Teri na-farmani karta hai. Aye Allah! Hum Teri hi ibadat karte hain aur Tere liye hi namaz padhte aur sajda karte hain, aur Teri hi taraf daudte aur tezi se aate hain. Hum Teri rehmat ki umeed rakhte hain aur Tere azaab se darte hain. Beshak Tera azaab munkiron ko pahunchne wala hai.",
+                urduScript: "اے اللہ! ہم تجھ ہی سے مدد مانگتے ہیں اور تجھ سے معافی طلب کرتے ہیں، تجھ پر ایمان لاتے ہیں اور تجھ پر بھروسہ کرتے ہیں، اور تیری بہترین تعریف کرتے ہیں، تیرا شکر ادا کرتے ہیں اور تیری ناشکری نہیں کرتے، اور چھوڑ دیتے ہیں اس شخص کو جو تیری نافرمانی کرے۔ اے اللہ! ہم تیری ہی عبادت کرتے ہیں اور تیرے لیے ہی نماز پڑھتے اور سجدہ کرتے ہیں، اور تیری رحمت کی امید رکھتے ہیں اور تیرے عذاب سے ڈرتے ہیں، بے شک تیرا عذاب کافروں کو پہنچنے والا ہے۔",
+                wordByWord: [
+                    { ar: "اللَّهُمَّ إِنَّا نَسْتَعِينُكَ", hi: "Allahumma inna nasta'eenuka", meaning: "Aye Allah hum Tujhse madad mangte hain" },
+                    { ar: "وَنَسْتَغْفِرُكَ", hi: "Wa nastaghfiruka", meaning: "Aur Tujhse bakhshish/maafi mangte hain" },
+                    { ar: "وَنُؤْمِنُ بِكَ وَنَتَوَكَّلُ عَلَيْكَ", hi: "Wa nu'minu bika wa natawakkalu 'alaik", meaning: "Aur Tujh par imaan aur bharosa rakhte hain" },
+                    { ar: "وَنَشْكُرُكَ وَلَا نَكْفُرُكَ", hi: "Wa nashkuruka wa la nakfuruk", meaning: "Tera shukr karte hain, na-shukri nahi karte" },
+                    { ar: "اللَّهُمَّ إِيَّاكَ نَعْبُدُ", hi: "Allahumma iyyaka na'budu", meaning: "Aye Allah hum Teri hi ibadat karte hain" },
+                    { ar: "وَلَكَ نُصَلِّي وَنَسْجُدُ", hi: "Wa laka nusalli wa nasjud", meaning: "Aur Tere liye hi namaz aur sajda karte hain" },
+                    { ar: "وَنَرْجُو رَحْمَتَكَ وَنَخْشَىٰ عَذَابَكَ", hi: "Wa narjoo rahmataka wa nakhsha 'adhabak", meaning: "Teri rehmat ki umeed aur azaab se darte hain" }
+                ]
+            }
+        ];
+
+        // =========================================================================
+        // 2. FAMOUS MASNOON DUAS (JANNAT, JAHANNUM SE PANAH, BHALAI, MAGHFIRAT)
+        // =========================================================================
+        const famousDuas = [
+            {
+                badge: "🌟 Jannat & Jahannum Se Panah Ki Khas Dua",
+                title: "1. Jannat Mangne Aur Jahannum Se Bachne Ki Dua",
+                when: "Har namaz ke baad ya din mein kam se kam 3 baar zaroor padhein (Tirmidhi):",
+                arabic: "اللَّهُمَّ إِنِّي أَسْأَلُكَ الْجَنَّةَ وَأَعُوذُ بِكَ مِنَ النَّارِ",
+                hinglish: "Allahumma inni as'alukal-Jannata wa a'udhu bika minan-nar.",
+                tarjuma: "Aye Allah! Beshak main Tujhse Jannat ka sawal karta hoon (Jannat mangta hoon) aur Jahannum ki aag se Teri panah chahta hoon.",
+                urdu: "اے اللہ! بے شک میں تجھ سے جنت مانگتا ہوں اور جہنم کی آگ سے تیری پناہ چاہتا ہوں۔"
+            },
+            {
+                badge: "🛡️ Jahannum Ki Aag Se Hifazat",
+                title: "2. Jahannum Se Panah Ki Dua (Fajr & Maghrib Ke Baad)",
+                when: "Fajr aur Maghrib ki namaz ke baad 7 baar padhne ki badi fazilat hai (Abu Dawood):",
+                arabic: "اللَّهُمَّ أَجِرْنِي مِنَ النَّارِ",
+                hinglish: "Allahumma ajirni minan-nar.",
+                tarjuma: "Aye Allah! Mujhe Jahannum ki aag se bacha le aur apni panah mein rakh.",
+                urdu: "اے اللہ! مجھے جہنم کی آگ سے بچا اور اپنی پناہ عطا فرما۔"
+            },
+            {
+                badge: "📖 Quran Ki Sabse Jame' Dua (Surah Baqarah: 201)",
+                title: "3. Duniya Aur Aakhirat Ki Har Bhalai Ki Dua",
+                when: "Nabi Kareem (ﷺ) yeh dua sabse zyada kasrat se padha karte the:",
+                arabic: "رَبَّنَا آتِنَا فِي الدُّنْيَا حَسَنَةً وَفِي الْآخِرَةِ حَسَنَةً وَقِنَا عَذَابَ النَّارِ",
+                hinglish: "Rabbana aatina fid-dunya hasanatan wa fil-aakhirati hasanatan wa qina 'adhaban-nar.",
+                tarjuma: "Aye humare Rab! Humein duniya mein bhi behtareen bhalai ata farma, aur aakhirat mein bhi bhalai ata farma, aur humein Jahannum ke azaab se bacha le.",
+                urdu: "اے ہمارے رب! ہمیں دنیا میں بھی بھلائی عطا فرما اور آخرت میں بھی بھلائی عطا فرما، اور ہمیں آگ کے عذاب سے بچا لے۔"
+            },
+            {
+                badge: "🤲 Pareshani Aur Ghabrahat Door Karne Ki Dua",
+                title: "4. Ayat-e-Karima (Mushkil Waqt Ki Dua)",
+                when: "Jab koi sakht pareshani, gham ya rukawat aaye toh kasrat se padhein (Surah Anbiya: 87):",
+                arabic: "لَا إِلَٰهَ إِلَّا أَنْتَ سُبْحَانَكَ إِنِّي كُنْتُ مِنَ الظَّالِمِينَ",
+                hinglish: "La ilaha illa Anta Subhanaka inni kuntu minaz-zalimeen.",
+                tarjuma: "(Aye Allah!) Tere siwa koi ibadat ke layaq nahi, Teri zaat har aib se paak hai, beshak main hi apni jaan par zulm (khata) karne walon mein se tha.",
+                urdu: "تیرے سوا کوئی معبود نہیں، تو پاک ہے، بے شک میں ہی اپنی جان پر ظلم (خطا) کرنے والوں میں سے تھا۔"
+            },
+            {
+                badge: "💚 Dil Ko Emaan Aur Hidayat Par Qayam Rakhne Ki Dua",
+                title: "5. Hidayat Aur Sabit-Qadmi Ki Dua",
+                when: "Apne dil ko bhatakne se bachane aur seedhe raste par rakhne ke liye:",
+                arabic: "يَا مُقَلِّبَ الْقُلُوبِ ثَبِّتْ قَلْبِي عَلَىٰ دِينِكَ ۝ رَبَّنَا لَا تُزِغْ قُلُوبَنَا بَعْدَ إِذْ هَدَيْتَنَا وَهَبْ لَنَا مِنْ لَدُنْكَ رَحْمَةً ۚ إِنَّكَ أَنْتَ الْوَهَّابُ",
+                hinglish: "Ya Muqallibal-quloobi thabbit qalbi 'ala deenik. | Rabbana la tuzigh quloobana ba'da idh hadaitana wa hab lana min ladunka rahmatan innaka Antal-Wahhab.",
+                tarjuma: "Aye dilon ko pherne wale (Allah)! Mere dil ko apne Deen par mazbooti se jama de. | Aye humare Rab! Humein seedha rasta dikhane ke baad humare dilon ko tedha (gumrah) na hone de aur apne paas se hum par khaas rehmat farma, beshak Tu hi sabse bada ata karne wala hai.",
+                urdu: "اے دلوں کو پھیرنے والے! میرے دل کو اپنے دین پر مضبوط رکھ۔ اے ہمارے رب! ہمیں ہدایت دینے کے بعد ہمارے دلوں کو ٹیڑھا نہ کر اور اپنے پاس سے رحمت عطا فرما۔"
+            },
+            {
+                badge: "✨ Bakhshish, Qarz Aur Rizq Ki Dua",
+                title: "6. Halal Rizq Aur Karz Se Nijat Ki Dua",
+                when: "Haram se bachne, halal rozi aur kisi ka mohtaj na banne ke liye (Tirmidhi):",
+                arabic: "اللَّهُمَّ اكْفِنِي بِحَلَالِكَ عَنْ حَرَامِكَ، وَأَغْنِنِي بِفَضْلِكَ عَمَّنْ سِوَاكَ",
+                hinglish: "Allahummak-fini bihalalika 'an haramika, wa aghnini bifadlika 'amman siwak.",
+                tarjuma: "Aye Allah! Mujhe apni Halal rozi de kar Haram se bacha le (kaafi ho ja), aur apne fazal o karam se mujhe apne siwa har kisi se be-niyaz kar de (kisi ka mohtaj na rakh).",
+                urdu: "اے اللہ! مجھے اپنا حلال رزق دے کر حرام سے بچا لے، اور اپنے فضل سے مجھے اپنے سوا ہر ایک سے بے نیاز کر دے۔"
+            },
+            {
+                badge: "👪 Walidain (Maa-Baap) Ke Haq Mein Dua",
+                title: "7. Maa-Baap Par Reham Aur Bakhshish Ki Dua",
+                when: "Har namaz ke baad apne Maa-Baap ke liye yeh Qurani dua mangna behtareen amal hai (Surah Isra: 24):",
+                arabic: "رَبِّ ارْحَمْهُمَا كَمَا رَبَّيَانِي صَغِيرًا",
+                hinglish: "Rabbir-hamhuma kama rabbayani sagheera.",
+                tarjuma: "Aye mere Rab! Mere Maa-Baap dono par waisa hi pyar aur reham farma jis tarah unhone bachpan mein mujhe pyar se paala aur parwarish ki.",
+                urdu: "اے میرے رب! میرے ماں باپ دونوں پر رحم فرما جیسا کہ انہوں نے بچپن میں میری پرورش کی۔"
+            },
+            {
+                badge: "📚 Ilm, Kamyabi Aur Aafiyat Ki Dua",
+                title: "8. Ilm Badhane Aur Sehat-o-Aafiyat Ki Dua",
+                when: "Padhai, kaam aur zindagi mein barkat o salamati ke liye:",
+                arabic: "رَبِّ زِدْنِي عِلْمًا ۝ اللَّهُمَّ إِنِّي أَسْأَلُكَ الْعَفْوَ وَالْعَافِيَةَ فِي الدُّنْيَا وَالْآخِرَةِ",
+                hinglish: "Rabbi zidni 'ilma. | Allahumma inni as'alukal-'afwa wal-'aafiyata fid-dunya wal-aakhirah.",
+                tarjuma: "Aye mere Rab! Mere ilm aur samajh mein izafa farma. | Aye Allah! Main Tujhse duniya aur aakhirat dono mein maafi aur har tarah ki salamati (aafiyat) mangta hoon.",
+                urdu: "اے میرے رب! میرے علم میں اضافہ فرما۔ اے اللہ! میں تجھ سے دنیا اور آخرت میں معافی اور عافیت مانگتا ہوں۔"
+            }
+        ];
+
+        // =========================================================================
+        // 3. DAILY KALMAY & IMPORTANT AZKAR WORDS
+        // =========================================================================
+        const azkarList = [
+            {
+                arabic: "أَسْتَغْفِرُ اللَّهَ رَبِّي مِنْ كُلِّ ذَنْبٍ وَأَتُوبُ إِلَيْهِ",
+                word: "1. Astaghfirullah (أَسْتَغْفِرُ اللَّهَ)",
+                meaning: "Main Allah se apne gunahon ki maafi mangta hoon.",
+                detail: "Pura matlab: 'Main Allah se har gunah ki maafi mangta hoon jo mera Rab hai aur Usi ki taraf palat-ta (tauba karta) hoon.' Rozana kasrat se Astaghfar padhne se dil ka bojh halka hota hai, pareshani door hoti hai aur rizq ke darwaze khulte hain."
+            },
+            {
+                arabic: "سُبْحَانَ اللَّهِ وَبِحَمْدِهِ ، سُبْحَانَ اللَّهِ الْعَظِيمِ",
+                word: "2. SubhanAllah (سُبْحَانَ اللَّهِ)",
+                meaning: "Allah har aib, kami aur kamzori se bilkul paak hai.",
+                detail: "Hadees mein aata hai ki 'SubhanAllahi wa bihamdihi, SubhanAllahil-Azeem' zabaan par padhne mein bahut halke hain, Qayamat ke din tarazu (meezan) mein bahut bhaari honge, aur Rahman ko behad pyare hain."
+            },
+            {
+                arabic: "الْحَمْدُ لِلَّهِ عَلَىٰ كُلِّ حَالٍ",
+                word: "3. Alhamdulillah (الْحَمْدُ لِلَّهِ)",
+                meaning: "Tamam tareefein aur shukr sirf Allah hi ke liye hain.",
+                detail: "Khushi mile ya koi aazmaish, har haal mein Allah ka shukr ada karna momin ki shaan hai. Quran mein Allah ka wada hai ki 'Agar tum shukr karoge toh Main tumhe aur zyada ata karunga.'"
+            },
+            {
+                arabic: "اللَّهُ أَكْبَرُ كَبِيرًا",
+                word: "4. Allahu Akbar (اللَّهُ أَكْبَرُ)",
+                meaning: "Allah sabse bada hai (har cheez se bada).",
+                detail: "Iska matlab hai ki duniya ki har taaqat, har khauf aur har masle se bada mera Rab hai. Namaz mein har rukn badalte waqt 'Allahu Akbar' isiliye kaha jata hai taaki dil mein sirf Allah ki badaai rahe."
+            },
+            {
+                arabic: "لَا إِلَٰهَ إِلَّا اللَّهُ مُحَمَّدٌ رَسُولُ اللَّهِ",
+                word: "5. Kalma Tayyibah (لَا إِلَٰهَ إِلَّا اللَّهُ)",
+                meaning: "Allah ke siwa koi ibadat ke layaq nahi, Muhammad (ﷺ) Allah ke Rasool hain.",
+                detail: "Yeh Imaan ki buniyad aur sabse afzal zikr hai. Iska maqsad yeh yaqeen rakhna hai ki nafa, nuqsan, izzat, zillat aur ibadat ka haqdar sirf Ek Allah hai."
+            },
+            {
+                arabic: "لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللَّهِ",
+                word: "6. La Hawla Wala Quwwata Illa Billah",
+                meaning: "Gunah se bachne ki himmat aur neki karne ki taaqat sirf Allah ki madad se hai.",
+                detail: "Hadees-e-Mubarakah mein is kalmay ko 'Jannat ke khazano mein se ek khazana' kaha gaya hai. Jab koi kaam mushkil lage ya thakan mehsus ho toh ise padhna chahiye."
+            },
+            {
+                arabic: "إِنَّا لِلَّهِ وَإِنَّا إِلَيْهِ رَاجِعُونَ",
+                word: "7. Inna Lillahi Wa Inna Ilaihi Raji'un",
+                meaning: "Beshak hum Allah hi ke hain aur humein Usi ki taraf laut kar jaana hai.",
+                detail: "Sirf inteqal par hi nahi, balki zindagi mein jab bhi koi chhota ya bada nuqsan ho, chot lage ya pareshani aaye, toh sabr ke sath yeh padhne se Allah behtar badla ata farmata hai."
+            },
+            {
+                arabic: "جَزَاكَ اللَّهُ خَيْرًا كَثِيرًا",
+                word: "8. JazakAllahu Khairan & MashaAllah",
+                meaning: "Allah aapko iska behtareen badla de | Jo Allah ne chaha wahi hua.",
+                detail: "Kisi ka shukriya ada karne ke liye 'JazakAllahu Khairan' sabse pyari dua hai. Aur kisi ki acchi cheez ya kamyabi dekh kar 'MashaAllah La Quwwata Illa Billah' kehne se buri nazar se hifazat rehti hai."
+            }
+        ];
+
+        // WHATSAPP SHARE HELPERS (CLEAN & NON-INTRUSIVE)
+        function shareWebsite() {
+            const text = `🕌 *Akmal Guidance - Mukammal Namaz Tarjuma & Duayein*\n\nNamaz mein padhe jaane wale har Arabic lafz ka asaan Hinglish aur Urdu tarjuma, Jannat-Jahannum ki Masnoon Duayein aur Daily Azkar yahan padhein:\n👉 ${SITE_URL}`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function shareNamazStep(stepNum) {
+            const item = namazSteps.find(s => s.step === stepNum);
+            if (!item) return;
+            const text = `🕌 *${item.title}*\n\n${item.arabic}\n\n🗣️ *Padhne ka tarika:* ${item.hinglish}\n\n💡 *Tarjuma:* ${item.tarjuma}\n\n📖 _Puri Namaz ka lafz-ba-lafz tarjuma yahan padhein:_\n👉 ${SITE_URL}`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        function shareDuaItem(idx) {
+            const d = famousDuas[idx];
+            if (!d) return;
+            const text = `🤲 *${d.title}*\n\n${d.arabic}\n\n🗣️ *Pronunciation:* ${d.hinglish}\n\n💡 *Tarjuma:* ${d.tarjuma}\n\n📖 _Aur Masnoon Duayein yahan dekhein:_\n👉 ${SITE_URL}`;
+            window.open(`https://wa.me/?text=${encodeURIComponent(text)}`, '_blank');
+        }
+
+        // RENDER NAMAZ STEPS
+        function renderNamazSteps() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const filtered = namazSteps.filter(item => {
+                const matchesStage = (currentStageFilter === 'ALL') || (item.stage === currentStageFilter);
+                const matchesSearch = item.title.toLowerCase().includes(query) ||
+                                      item.hinglish.toLowerCase().includes(query) ||
+                                      item.tarjuma.toLowerCase().includes(query) ||
+                                      item.sectionBadge.toLowerCase().includes(query);
+                return matchesStage && matchesSearch;
+            });
+
+            const container = document.getElementById('namaz-steps-list');
+            container.innerHTML = filtered.map(item => `
+                <article class="pro-card rounded-2xl p-4 sm:p-6 transition">
+                    <!-- Highlighted Section Bar + Non-Intrusive Top Right Share Icon -->
+                    <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-ivory-200">
+                        <span class="section-pill text-[11px] sm:text-xs font-extrabold px-3 py-1 rounded-lg tracking-wide shadow-sm">
+                            ${item.sectionBadge}
+                        </span>
+                        <div class="flex items-center gap-1.5">
+                            <span class="text-xs font-extrabold text-gold-700 bg-gold-100 px-2.5 py-1 rounded-md border border-gold-500/30">
+                                STEP ${item.step}/15
+                            </span>
+                            <button onclick="shareNamazStep(${item.step})" title="Yeh Dua WhatsApp par bhejein" class="wa-btn px-2 py-1 rounded-md text-[11px] font-bold flex items-center gap-1 transition">
+                                <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.124.556 4.119 1.528 5.847l-1.528 5.581 5.713-1.499c1.682.905 3.606 1.421 5.654 1.421 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+                                <span>Share</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Title & Brief Context -->
+                    <div class="mt-3">
+                        <h3 class="text-lg sm:text-xl font-extrabold text-emerald-950">${item.title}</h3>
+                        <p class="text-xs text-emerald-800 mt-0.5">${item.whenToRead}</p>
+                    </div>
+
+                    <!-- Arabic Mihrab Container -->
+                    <div class="mt-4 mihrab-arabic-box p-4 sm:p-6 text-right">
+                        <p class="arabic-text text-2xl sm:text-3xl text-emerald-950 font-normal select-all">${item.arabic}</p>
+                    </div>
+
+                    <!-- Highlighted Hinglish Pronunciation & Meaning Boxes -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-3.5 mt-4">
+                        <!-- Hinglish Pronunciation -->
+                        <div class="talaffuz-highlight p-3.5 sm:p-4 rounded-xl">
+                            <span class="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-emerald-800 block mb-1">
+                                🗣️ Hinglish Pronunciation (Kaise Padhein)
+                            </span>
+                            <p class="text-sm sm:text-base font-bold text-emerald-950 leading-relaxed">${item.hinglish}</p>
+                        </div>
+
+                        <!-- Hinglish Tarjuma (MAIN FOCUS) -->
+                        <div class="tarjuma-highlight p-3.5 sm:p-4 rounded-xl">
+                            <span class="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-gold-700 block mb-1">
+                                💡 Pura Tarjuma / Matlab (Hinglish)
+                            </span>
+                            <p class="text-sm sm:text-base font-semibold text-emerald-950 leading-relaxed">${item.tarjuma}</p>
+                        </div>
+                    </div>
+
+                    <!-- Urdu Script Tarjuma -->
+                    <div class="mt-3.5 p-3.5 sm:p-4 rounded-xl bg-ivory-50 border border-ivory-200 text-right">
+                        <span class="text-[10px] sm:text-[11px] font-extrabold uppercase tracking-wider text-emerald-800 block mb-1 text-left">
+                            📜 Urdu Tarjuma (اردو ترجمہ)
+                        </span>
+                        <p class="urdu-text text-base sm:text-lg text-emerald-950">${item.urduScript}</p>
+                    </div>
+
+                    <!-- Word-by-Word Expandable Breakdown -->
+                    <details class="wbw-details mt-3.5 group bg-ivory-50/70 border border-gold-500/30 rounded-xl overflow-hidden" ${allWbwOpen ? 'open' : ''}>
+                        <summary class="px-4 py-2.5 text-xs sm:text-sm font-extrabold text-emerald-900 cursor-pointer hover:bg-ivory-100 flex items-center justify-between select-none">
+                            <span>🔍 Har Lafz Ka Alag-Alag Tarjuma Dekhein (${item.wordByWord.length} Alfaaz)</span>
+                            <span class="text-gold-600 group-open:rotate-180 transition-transform">▼</span>
+                        </summary>
+                        <div class="p-3.5 border-t border-gold-500/20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 bg-white">
+                            ${item.wordByWord.map(w => `
+                                <div class="p-3 rounded-xl bg-ivory-50 border border-ivory-200 flex flex-col justify-between">
+                                    <div class="arabic-text text-xl text-emerald-950 text-right mb-1">${w.ar}</div>
+                                    <div class="border-t border-ivory-200 pt-1.5">
+                                        <div class="text-xs font-extrabold text-emerald-800">${w.hi}</div>
+                                        <div class="text-xs font-semibold text-gold-700 mt-0.5">➔ ${w.meaning}</div>
+                                    </div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </details>
+                </article>
+            `).join('');
+        }
+
+        // RENDER DUAS
+        function renderDuas() {
+            const container = document.getElementById('duas-list');
+            container.innerHTML = famousDuas.map((d, idx) => `
+                <article class="pro-card rounded-2xl p-4 sm:p-6">
+                    <div class="flex flex-wrap items-center justify-between gap-2 pb-2.5 border-b border-ivory-200">
+                        <span class="px-3 py-1 rounded-lg bg-emerald-900 text-amber-200 text-xs font-bold">${d.badge}</span>
+                        <button onclick="shareDuaItem(${idx})" title="Yeh Dua WhatsApp par bhejein" class="wa-btn px-2.5 py-1 rounded-md text-[11px] font-bold flex items-center gap-1 transition">
+                            <svg class="w-3.5 h-3.5 fill-current shrink-0" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.77-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.006c.106.005.249-.04.39.298.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86s.274.072.376-.043c.101-.116.433-.506.549-.68.116-.173.231-.145.39-.087s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.1.824zm-3.423-14.416c-6.627 0-12 5.373-12 12 0 2.124.556 4.119 1.528 5.847l-1.528 5.581 5.713-1.499c1.682.905 3.606 1.421 5.654 1.421 6.627 0 12-5.373 12-12 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>Share Dua</span>
+                        </button>
+                    </div>
+                    <h3 class="text-lg sm:text-xl font-extrabold text-emerald-950 mt-3">${d.title}</h3>
+                    <p class="text-xs text-emerald-800 mt-0.5">${d.when}</p>
+
+                    <div class="mt-4 mihrab-arabic-box p-4 sm:p-5 text-right">
+                        <p class="arabic-text text-2xl sm:text-3xl text-emerald-950">${d.arabic}</p>
+                    </div>
+
+                    <div class="grid md:grid-cols-2 gap-3.5 mt-4">
+                        <div class="talaffuz-highlight p-3.5 rounded-xl">
+                            <span class="text-[10px] font-extrabold uppercase text-emerald-800 block mb-1">🗣️ Hinglish Pronunciation</span>
+                            <p class="text-sm font-bold text-emerald-950 leading-relaxed">${d.hinglish}</p>
+                        </div>
+                        <div class="tarjuma-highlight p-3.5 rounded-xl">
+                            <span class="text-[10px] font-extrabold uppercase text-gold-700 block mb-1">💡 Tarjuma (Matlab)</span>
+                            <p class="text-sm font-semibold text-emerald-950 leading-relaxed">${d.tarjuma}</p>
+                        </div>
+                    </div>
+
+                    <div class="mt-3 p-3.5 rounded-xl bg-ivory-50 border border-ivory-200 text-right">
+                        <p class="urdu-text text-base sm:text-lg text-emerald-950">${d.urdu}</p>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // RENDER AZKAR
+        function renderAzkar() {
+            const container = document.getElementById('azkar-list');
+            container.innerHTML = azkarList.map(a => `
+                <article class="pro-card rounded-2xl p-5 flex flex-col justify-between">
+                    <div>
+                        <div class="mihrab-arabic-box p-4 text-right mb-3">
+                            <p class="arabic-text text-2xl text-emerald-950">${a.arabic}</p>
+                        </div>
+                        <h3 class="text-base sm:text-lg font-extrabold text-emerald-950">${a.word}</h3>
+                        <div class="tarjuma-highlight p-3 rounded-xl mt-2.5">
+                            <span class="text-[10px] font-extrabold uppercase text-gold-700 block">Asal Tarjuma:</span>
+                            <p class="text-xs sm:text-sm font-bold text-emerald-950 mt-0.5">"${a.meaning}"</p>
+                        </div>
+                        <p class="text-xs sm:text-sm text-emerald-800 mt-3 leading-relaxed bg-ivory-50 p-3.5 rounded-xl border border-ivory-200">
+                            ${a.detail}
+                        </p>
+                    </div>
+                </article>
+            `).join('');
+        }
+
+        // STAGE FILTER HANDLER
+        function filterByStage(stage) {
+            currentStageFilter = stage;
+            ['ALL', 'QIYAM', 'RUKU_SAJDA', 'QADAH', 'WITR'].forEach(s => {
+                const btn = document.getElementById(`stage-${s}`);
+                if (s === stage) {
+                    btn.className = "px-3 py-1.5 rounded-lg bg-emerald-900 text-amber-200 shrink-0 transition";
+                } else {
+                    btn.className = "px-3 py-1.5 rounded-lg bg-ivory-100 text-emerald-900 hover:bg-ivory-200 shrink-0 transition";
+                }
+            });
+            renderNamazSteps();
+        }
+
+        function applyFilters() {
+            renderNamazSteps();
+        }
+
+        // GLOBAL WORD BY WORD TOGGLE
+        function toggleAllWordByWord() {
+            allWbwOpen = !allWbwOpen;
+            const btn = document.getElementById('wbw-toggle-btn');
+            btn.innerHTML = allWbwOpen ? '🔼 Band Karein' : '🔍 Lafzi Tarjuma';
+            document.querySelectorAll('.wbw-details').forEach(el => {
+                if (allWbwOpen) el.setAttribute('open', '');
+                else el.removeAttribute('open');
+            });
+        }
+
+        // MAIN TAB SWITCHER
+        function switchMainTab(tab) {
+            ['namaz', 'duas', 'azkar', 'faraiz'].forEach(t => {
+                document.getElementById(`view-${t}`).classList.add('hidden');
+                const navBtn = document.getElementById(`tab-${t}`);
+                navBtn.className = "px-3.5 py-2 rounded-xl text-emerald-950 bg-ivory-100 hover:bg-ivory-200 whitespace-nowrap transition flex items-center gap-1.5";
+            });
+            document.getElementById(`view-${tab}`).classList.remove('hidden');
+            document.getElementById(`tab-${tab}`).className = "active-tab px-3.5 py-2 rounded-xl whitespace-nowrap transition flex items-center gap-1.5";
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        // INITIAL RENDER
+        renderNamazSteps();
+        renderDuas();
+        renderAzkar();
+    </script>
+</body>
+</html>
